@@ -1,0 +1,63 @@
+Install PHP 7.2 and Laravel
+
+Be sure that those extensions of php are installed too:
+
+    [0] => Core
+    [1] => date
+    [2] => libxml
+    [3] => openssl
+    [4] => pcre
+    [5] => zlib
+    [6] => filter
+    [7] => hash
+    [8] => pcntl
+    [9] => Reflection
+    [10] => SPL
+    [11] => sodium
+    [12] => session
+    [13] => standard
+    [14] => mysqlnd
+    [15] => PDO
+    [16] => xml
+    [17] => calendar
+    [18] => ctype
+    [19] => curl
+    [20] => dom
+    [21] => mbstring
+    [22] => fileinfo
+    [23] => ftp
+    [24] => gd
+    [25] => gettext
+    [26] => iconv
+    [27] => json
+    [28] => exif
+    [29] => mysqli
+    [30] => pdo_mysql
+    [31] => Phar
+    [32] => posix
+    [33] => readline
+    [34] => shmop
+    [35] => SimpleXML
+    [36] => sockets
+    [37] => sysvmsg
+    [38] => sysvsem
+    [39] => sysvshm
+    [40] => tokenizer
+    [41] => wddx
+    [42] => xmlreader
+    [43] => xmlwriter
+    [44] => xsl
+    [45] => zip
+    [46] => Zend OPcache
+
+You can check it using    php -r "print_r(get_loaded_extensions());"
+
+Create a new database, run the produto.sql archive on it
+
+Create a .env file, copy the .env.example and fill it with your database info
+
+Finally, type in command line:
+
+php artisan serve
+
+And access the IP and port given
